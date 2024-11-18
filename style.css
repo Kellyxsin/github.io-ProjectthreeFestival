@@ -7,7 +7,7 @@
 body {
     height: 760px;
     width: 1200px;
-    background-color: lightpink;
+    background-color: lightpink !important;
     font-family: 'Times New Roman', Times, serif;
     color: black;
     line-height: 1.6;
