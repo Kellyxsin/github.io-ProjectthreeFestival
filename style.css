@@ -7,15 +7,23 @@
 body {
     height: 760px;
     width: 1200px;
-    background-color: lightpink !important;
-    font-family: 'Times New Roman', Times, serif;
+    background-color: #f1a5c4 !important;
+    font-family:'Times New Roman', Times, serif;
     color: black;
     line-height: 1.6;
+    margin-left: 5%;
+}
+
+.wrapper {
+    padding-left: 5%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 header {
-    background-color: lightpink;
+    background-color: #f1a5c4;
     text-align: center;
+    margin-left: 5%;
 }
 
 .nav-links {
@@ -39,6 +47,7 @@ header {
 .hero {
     padding: 3rem 1rem;
     text-align: center;
+    margin-left: 5%;
 }
 
 .hero h1 {
