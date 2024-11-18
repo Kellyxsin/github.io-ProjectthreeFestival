@@ -47,7 +47,7 @@ header {
 }
 
 .hero p {
-    width: 150 px;
-    height: auto;
-    margin-top: 1.5rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    font-size: 1.2rem;
 }
