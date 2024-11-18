@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    height: 760px;
+    width: 1200px;
+    background-color: lightpink;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    line-height: 1.6;
+}
+
+header {
+    background-color: lightpink;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 1.5rem;
+}
