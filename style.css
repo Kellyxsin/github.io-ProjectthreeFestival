@@ -35,3 +35,19 @@ header {
 .nav-links li a:hover {
     color: var(--primary-color);
 }
+
+.hero {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.hero h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.hero p {
+    width: 150 px;
+    height: auto;
+    margin-top: 1.5rem;
+}
