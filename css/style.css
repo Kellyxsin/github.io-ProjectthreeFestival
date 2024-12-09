@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: lightpink;
+    background-color: rgb(56, 193, 193);
     font-family: 'Times New Roman', Times, serif;
     color: black;
     line-height: 1.6;
@@ -76,11 +76,18 @@ header nav ul li a:hover {
     margin: 1rem auto;
     font-size: 1.2rem;
 }
+
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
   
   /* Events Section */
 .Events {
     padding: 2rem 1rem;
-    background-color: lightpink;
+    background-color: rgb(56, 193, 193);
 }
   
 .Events h1 {
@@ -139,7 +146,7 @@ header nav ul li a:hover {
 .Merch {
     padding: 2rem 1rem;
     text-align: center;
-    background-color: lightpink;
+    background-color: rgb(56, 193, 193);
 }
   
 .Merch h1 {
