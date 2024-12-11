@@ -4,220 +4,85 @@
     box-sizing: border-box;
 }
 
+/* General Styling */
 body {
-    background-color: rgb(56, 193, 193);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, sans-serif;
+    background-color: #13D4D4; /* Teal background */
     color: black;
-    line-height: 1.6;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-  
-.wrapper {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 5%;
-    flex: 1;
-}
-  
-  /* Header Styles */
-header {
-    background-color: var(--background-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
-}
-  
-header .logo {
-    height: 80px;
-    width: auto;
-}
-  
-header nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
-}
-  
-header nav ul li a {
-    font-weight: bold;
-    font-size: 1rem;
-    text-decoration: none;
-    color: var(--primary-color);
-    transition: color 0.3s;
-}
-  
-header nav ul li a:hover {
-    color: var(--accent-color);
-}
-  
-  /* Hero Section */
-.hero {
-    text-align: center;
-    padding: 3rem 1rem;
-}
-  
-.hero img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-}
-  
-.hero h1 {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-}
-  
-.hero p {
-    max-width: 600px;
-    margin: 1rem auto;
-    font-size: 1.2rem;
+    padding: 0;
 }
 
-img {
-    max-width: 80%;
-    height: auto;
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 100px; /* Logo size */
     display: block;
     margin: 0 auto;
 }
-  
-  /* Events Section */
-.Events {
-    padding: 2rem 1rem;
-    background-color: rgb(56, 193, 193);
-}
-  
-.Events h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-  
-.Event-day {
-    margin-bottom: 2rem;
-}
-  
-.Event-day h2 {
-    font-size: 2rem;
-    color: var(--primary-color);
-}
-  
-.Event-day img {
-    max-width: 100%;
-    height: auto;
-    margin: 1rem 0;
-    display: block;
-}
-  
-.Event-day p {
-    font-size: 1.1rem;
-}
-  
-  /* Event Items for Days 2 & 3 */
-.Event-group {
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    justify-content: center;
+    background-color: white;
 }
-  
-.event-item {
-    flex: 1 1 calc(50% - 1.5rem); /* Flexible 2-column layout */
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+nav ul li {
+    margin: 0 15px;
 }
-  
-.event-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 0.5rem;
-}
-  
-.event-item p {
-    font-size: 1rem;
-}
-  
-  /* Merch Section */
-.Merch {
-    padding: 2rem 1rem;
-    text-align: center;
-    background-color: rgb(56, 193, 193);
-}
-  
-.Merch h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-  
-.Merch-item {
-    display: inline-block;
-    margin: 1rem;
-    text-align: center;
-}
-  
-.Merch-item img {
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 0.5rem;
-    display: block;
-}
-  
-.Merch-item p {
-    font-size: 1.2rem;
-}
-  
-  /* Footer Styles */
-footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: var(--background-color);
-    border-top: 1px solid var(--primary-color);
-}
-  
-footer p {
-    font-size: 1rem;
-    color: var(--primary-color);
-}
-  
-footer a {
-    color: var(--primary-color);
+
+nav ul li a {
     text-decoration: none;
     font-weight: bold;
+    color: black; /* Default link color */
+    transition: color 0.3s;
 }
-  
-footer a:hover {
-    text-decoration: underline;
+
+nav ul li a:hover {
+    color: lightpink; /* Hover color for links */
 }
-  
-  /* Responsive Design */
-@media (max-width: 768px) {
-    body {
-      padding: 0 1rem;
+
+/* Content Section */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 }
-  
-header nav ul {
-      flex-direction: column;
-      gap: 0.5rem;
+
+main img {
+    width: 90%; /* Scaled images */
+    max-width: 300px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
 }
-  
-.hero h1 {
-      font-size: 1.8rem;
+
+/* Events Section */
+.events h2 {
+    font-family: "Roboto Slab", serif; /* Custom font for Day titles */
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
 }
-  
-.hero p {
-      font-size: 1rem;
+
+/* Merch Section */
+.merch img {
+    width: 200px; /* Smaller images for merch */
+    margin: 10px auto;
+    display: block;
 }
-  
-.Event-group {
-      flex-direction: column;
-}
-  
-.event-item {
-      flex: 1 1 100%;
-    }
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+    font-size: 14px;
 }
